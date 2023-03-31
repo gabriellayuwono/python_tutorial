@@ -6,10 +6,11 @@ import pandas as pd
 # 1. Input
 raw_data = pd.read_csv("Menu.csv")
 print(raw_data)
-print(raw_data.info())
 
 # 2. Process
-total = raw_data["Price"].sum()
+Numberofitems = len(raw_data)
+Sorted_data = raw_data.sort_values ("Menu",ascending=True)
 
 # 3. Output
-print(f"Total: {total}")
+print(f"Count:{Numberofitems}")
+print(f'{Sorted_data}')
