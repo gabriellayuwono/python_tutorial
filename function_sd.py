@@ -1,6 +1,4 @@
-#
-# Template for Python program
-#
+
 import statistics, math
 
 def my_add(input):
